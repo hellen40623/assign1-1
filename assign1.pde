@@ -48,7 +48,12 @@ void draw() {
       // start rolling
       // -------------------------------------------------
       // put your code inside here
-      
+      int r1 = int(random(6));
+      int r2 = int(random(6));
+      int r3 = int(random(6));
+      machine.setSlotFruit(0,r1);
+      machine.setSlotFruit(1,r2);
+      machine.setSlotFruit(2,r3);
       
       // -------------------------------------------------
     }
@@ -62,7 +67,24 @@ void draw() {
       // stop rolling
       // -------------------------------------------------
       // put your code inside here
+      int a = machine.getSlotScore(0);
+      int b = machine.getSlotScore(1);
+      int c = machine.getSlotScore(2);
+      int d = machine.getSlotScore(3);
+      int e = machine.getSlotScore(4);
+      int f = machine.getSlotScore(5);
+    
+      int m = machine.getFruitCount(0);
+      int n = machine.getFruitCount(1);
+      int o = machine.getFruitCount(2);
+      int p = machine.getFruitCount(3);
+      int q = machine.getFruitCount(4);
+      int r = machine.getFruitCount(5);
       
+      totalScore-=50;
+      totalScore=totalScore +a*m*m+b*n*n+c*o*o+d*p*p+e*q*q+f*r*r;
+     
+      int result = machine.probability(0.1);
  
  
  

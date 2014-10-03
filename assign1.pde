@@ -10,7 +10,7 @@ int h = 50;
 // declare variables
 // --------------------------------------------
 // put your code inside here
-int totalScore = 0;
+int totalScore = 500;
 
 // --------------------------------------------
 

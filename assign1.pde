@@ -85,6 +85,7 @@ void draw() {
       totalScore=totalScore +a*m*m+b*n*n+c*o*o+d*p*p+e*q*q+f*r*r;
      
       int result = machine.probability(0.1);
+       result = m = 3;
  
  
  

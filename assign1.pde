@@ -48,6 +48,7 @@ void draw() {
       // start rolling
       // -------------------------------------------------
       // put your code inside here
+      totalScore-=50;
       int r1 = int(random(6));
       int r2 = int(random(6));
       int r3 = int(random(6));
@@ -81,7 +82,7 @@ void draw() {
       int q = machine.getFruitCount(4);
       int r = machine.getFruitCount(5);
       
-      totalScore-=50;
+      
       totalScore=totalScore +a*m*m+b*n*n+c*o*o+d*p*p+e*q*q+f*r*r;
      
       int result = machine.probability(0.1);
